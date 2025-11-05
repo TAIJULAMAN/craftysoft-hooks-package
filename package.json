@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "node api.js && node init && tsup src/index.ts --format esm,cjs --dts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest",
     "test:watch": "vitest --watch",
