@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "node init && tsup src/index.ts --format esm,cjs --dts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest",
     "test:watch": "vitest --watch",
@@ -41,7 +41,9 @@
     "@testing-library/react-hooks": "^8.0.1",
     "@types/react": "^18.0.0",
     "@vitest/ui": "^1.0.0",
+    "dotenv": "^8.2.0",
     "jsdom": "^23.0.0",
+    "node-fetch": "^3.3.2",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0",
     "vitest": "^1.6.1"
